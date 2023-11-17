@@ -1,4 +1,4 @@
-#CAS Applied Data Science Course Material
+# CAS Applied Data Science Course Material
 
 GitHub Repository for files used during the Certificate of Advanced Studies in Applied Data Science at the University of Bern in the Fall Semester 
 of 2023.
