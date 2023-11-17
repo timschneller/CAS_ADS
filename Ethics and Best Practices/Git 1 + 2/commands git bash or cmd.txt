@@ -1,0 +1,307 @@
+homework: until next week: create github account and add SSH key
+
+1) set up work directory
+2) create files 
+3) initialize git (git init)
+	git status
+4) add files to commit (git add file.txt)
+	git status
+5) commit (git commit -m "commit message")
+	git status
+
+C:\Users\tim94>cd
+C:\Users\tim94
+
+C:\Users\tim94>mkdir cas_demo
+
+
+C:\Users\tim94>cd cas_demo
+C:\Users\tim94\cas_demo
+
+C:\Users\tim94\cas_demo>cd ..
+C:\Users\tim94
+C
+
+C:\Users\tim94>cd cas_demo
+C:\Users\tim94\cas_demo
+
+C:\Users\tim94\cas_demo>type nul > ggg.bmp
+
+C:\Users\tim94\cas_demo>copy ggg.bmp gg2.bmp
+        1 Datei(en) kopiert.
+
+C:\Users\tim94\cas_demo>notepad asdf.txt
+
+C:\Users\tim94\cas_demo>dir
+ Datenträger in Laufwerk C: ist Windows-SSD
+ Volumeseriennummer: 2AD3-65C0
+
+ Verzeichnis von C:\Users\tim94\cas_demo
+
+03.11.2023  10:26    <DIR>          .
+03.11.2023  10:26    <DIR>          ..
+03.11.2023  10:27                16 asdf.txt
+03.11.2023  10:23                 0 gg2.bmp
+03.11.2023  10:23                 0 ggg.bmp
+               3 Datei(en),             16 Bytes
+               2 Verzeichnis(se), 112'612'057'088 Bytes frei
+
+C:\Users\tim94\cas_demo>dir *.bmp
+ Datenträger in Laufwerk C: ist Windows-SSD
+ Volumeseriennummer: 2AD3-65C0
+
+ Verzeichnis von C:\Users\tim94\cas_demo
+
+03.11.2023  10:23                 0 gg2.bmp
+03.11.2023  10:23                 0 ggg.bmp
+               2 Datei(en),              0 Bytes
+               0 Verzeichnis(se), 112'607'023'104 Bytes frei
+
+
+C:\Users\tim94\cas_demo>type nul > name_file.txt
+
+C:\Users\tim94\cas_demo>type nul > asdf.csv
+
+C:\Users\tim94\cas_demo>type nul > file.csv
+
+C:\Users\tim94\cas_demo>dir
+ Datenträger in Laufwerk C: ist Windows-SSD
+ Volumeseriennummer: 2AD3-65C0
+
+ Verzeichnis von C:\Users\tim94\cas_demo
+
+03.11.2023  10:31    <DIR>          .
+03.11.2023  10:31    <DIR>          ..
+03.11.2023  10:31                 0 asdf.csv
+03.11.2023  10:27                16 asdf.txt
+03.11.2023  10:30                 0 file.csv
+03.11.2023  10:23                 0 gg2.bmp
+03.11.2023  10:23                 0 ggg.bmp
+03.11.2023  10:31                 0 name_file.txt
+               6 Datei(en),             16 Bytes
+               2 Verzeichnis(se), 112'694'505'472 Bytes frei
+
+C:\Users\tim94\cas_demo>
+
+Git Bash:
+
+tim94@DESKTOP-UFF0KKF MINGW64 ~/cas_demo (master)
+$ git init
+Initialized empty Git repository in C:/Users/tim94/cas_demo/.git/
+
+tim94@DESKTOP-UFF0KKF MINGW64 ~/cas_demo (master)
+$ git config --global user.name "Tim Schneller"
+
+tim94@DESKTOP-UFF0KKF MINGW64 ~/cas_demo (master)
+$ git config --global user.email "tim.schneller94@gmail.com"
+
+tim94@DESKTOP-UFF0KKF MINGW64 ~/cas_demo (master)
+$ git config --list
+user.name=Tim Schneller
+user.email=tim.schneller94@gmail.com
+
+tim94@DESKTOP-UFF0KKF MINGW64 ~/cas_demo (master)
+$ ls
+asdf.csv  asdf.txt  file.csv  gg2.bmp  ggg.bmp  name_file.txt
+
+tim94@DESKTOP-UFF0KKF MINGW64 ~/cas_demo (master)
+$ nano asdf.txt
+
+tim94@DESKTOP-UFF0KKF MINGW64 ~/cas_demo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        asdf.csv
+        asdf.txt
+        file.csv
+        gg2.bmp
+        ggg.bmp
+        name_file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+tim94@DESKTOP-UFF0KKF MINGW64 ~/cas_demo (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+tim94@DESKTOP-UFF0KKF MINGW64 ~/cas_demo (master)
+$ git add asdf.txt
+warning: in the working copy of 'asdf.txt', LF will be replaced by CRLF the next time Git touches it
+
+tim94@DESKTOP-UFF0KKF MINGW64 ~/cas_demo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   asdf.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        asdf.csv
+        file.csv
+        gg2.bmp
+        ggg.bmp
+        name_file.txt
+
+
+tim94@DESKTOP-UFF0KKF MINGW64 ~/cas_demo (master)
+$ git status -s
+A  asdf.txt
+?? asdf.csv
+?? file.csv
+?? gg2.bmp
+?? ggg.bmp
+?? name_file.txt
+
+tim94@DESKTOP-UFF0KKF MINGW64 ~/cas_demo (master)
+$ git commit -m "initial commit"
+[master (root-commit) 3ce95d1] initial commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 asdf.txt
+
+tim94@DESKTOP-UFF0KKF MINGW64 ~/cas_demo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        asdf.csv
+        file.csv
+        gg2.bmp
+        ggg.bmp
+        name_file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+tim94@DESKTOP-UFF0KKF MINGW64 ~/cas_demo (master)
+$ git add . /// bad practice!
+
+tim94@DESKTOP-UFF0KKF MINGW64 ~/cas_demo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   asdf.csv
+        new file:   file.csv
+        new file:   gg2.bmp
+        new file:   ggg.bmp
+        new file:   name_file.txt
+
+tim94@DESKTOP-UFF0KKF MINGW64 ~/cas_demo (master)
+$ git log
+commit 3ce95d18e4849c6e8e5bf72fe29eaf366ebbdb48 (HEAD -> master)
+Author: Tim Schneller <tim.schneller94@gmail.com>
+Date:   Fri Nov 3 11:22:42 2023 +0100
+
+    initial commit
+
+tim94@DESKTOP-UFF0KKF MINGW64 ~/cas_demo (master)
+$ rm -R .git
+rm: remove write-protected regular file '.git/objects/1a/d92da406c746e1b1e3ca5adf8cc50421f387db'? y
+rm: remove write-protected regular file '.git/objects/3c/e95d18e4849c6e8e5bf72fe29eaf366ebbdb48'? y
+rm: remove write-protected regular file '.git/objects/a9/715fdb3b763de9acd42aa51ec96d2d11076cb1'? y
+rm: remove write-protected regular file '.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391'? y
+
+tim94@DESKTOP-UFF0KKF MINGW64 ~/cas_demo (master)
+$ git init
+Initialized empty Git repository in C:/Users/tim94/cas_demo/.git/
+
+tim94@DESKTOP-UFF0KKF MINGW64 ~/cas_demo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        asdf.csv
+        asdf.txt
+        file.csv
+        gg2.bmp
+        ggg.bmp
+        name_file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+*after doing changes to a file: 
+git diff filename.suffix
+$ git diff asdf.csv
+diff --git a/asdf.csv b/asdf.csv
+index e69de29..8bd6648 100644
+--- a/asdf.csv
++++ b/asdf.csv
+@@ -0,0 +1 @@
++asdf
+
+*undo changes..
+git restore filename.suffix
+
+*unstage files to be commited
+git restore --staged filename.suffix
+
+*generate key
+$ ssh-keygen -t ed25519 -C "tim.schneller94@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/tim94/.ssh/id_ed25519):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/tim94/.ssh/id_ed25519
+Your public key has been saved in /c/Users/tim94/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:PW73o8mk+Tzk6m8gmDA/D6+rqbeC9gtGjg3ADnnhr6w tim.schneller94@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|  .              |
+|.o .             |
+|+.o              |
+|+. .o    .       |
+|.o  .+ oS o      |
+|++ .  * .....    |
+|.=+    = .o+o    |
+|ooo ..  o. B+o.  |
+|E o*=ooo .==Bo.. |
++----[SHA256]-----+
+
+
+*push repository to github. (change directory to folder you want to push first)
+git remote add origin git@github.com:timschneller/CAS-ADS.git
+git branch -M main
+git push -u origin main
+
+
+*change text of last commit message
+git commit -amend 
+
+
+
+*info about branches
+git branch
+
+*new branch
+git branch new_branch
+
+*switch branch
+*git switch new_branch
+
+*new branch and switch in one line
+git checkout -b new_branch
+
+*work on new branch, do some changes -> merge with other branch (write name of new branch)
+git merge new_feature 
+
+*log 
+git log
+git log --online -all --graph
+
+*delete branch
+git branch -d old_branch
+

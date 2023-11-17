@@ -1,0 +1,64 @@
+module 2 project
+
+e.g. income difference men-women over time.. prediction when they will be equal.
+
+requirements
+
+15min presentation
+15min discussion
+
+regression/tests/multiple tests... just apply the things we learned
+
+idea: 
+
+prepare dataset from SAR with STATA.
+inclusion/exclusion criteria to have groups that are similar.
+
+introduction: explain: what is an endoprosthesis, reverse vs. anatomic, lateralization, abduction
+
+method: where is the data from, how is it measured, exclusion/inclusion, statistical method.
+
+hypothesis: 
+
+compare lateralization vs no lateralization of reverse shoulder prosthesis on outcome (abduction strength,rom,cs,ssv) 2 years after surgery.
+grouping by: diagnosis, Chief surgeon yes or no, male/female, ASA category, bmi, overhead sports
+
+group comparison std. diff.?
+
+regression: strenght = intercept + abd_strength baseline + lateralization + chief y/n + age + asa + bmi + overhead + 
+
+limitations: physical therapy not known, records with missing data are dropped -> biased maybe? baseline comparison missign, are groups the same/comparable?
+plots: strength baseline/2years
+
+
+0) background: schulterprothese, glenoid, scapula, humerus. inverse prothese. vorteil zu anatomisch: medialisiertes gelenkzentrum und grössere vorspannung auf deltamuskel
+https://www.universimed.com/ch/article/orthopaedie-traumatologie/lateralisierung-endoprothetik-schulter-119582
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8623532/
+explain ASA categories 
+
+1) look at data from registry: take all reverse prostheses with outcome at 2 years. only primär implantations
+
+groups with lateralized + 6mm had only 3 complete datasets. -> merge with lateralized +  3mm
+
+patients with already high baseline score didnt improve as much?
+
+outcomes csc, abdc, ssvc
+lateralized vs not lateralized
+male vs female
+bmi25+ vs bmi25- (maybe 30+/30-) begleiterkrankungen..?
+asa34 vs asa12
+Prim.OA vs CTA
+
+describe source data
+describe patient selection reasoning
+baseline characteristics table
+external rot? why should it be better?
+notching?
+hypothesis?
+report group size 
+quellen
+röntgenbilder als bsp.
+
+plots: verlauf...
+descriptive statistics 
+demographics table

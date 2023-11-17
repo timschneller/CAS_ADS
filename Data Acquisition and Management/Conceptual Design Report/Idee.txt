@@ -1,0 +1,22 @@
+shoulder arthroplasty
+
+inverse vs anatomic configuration
+
+preoperative planning machine learning model on patient outcome... data from françois?
+dataset size requirements?
+
+osteoarthritis classification from radiographic image
+
+data acquisition with scraping? API? if REDCap -> API
+
+predict ROM after shoulder arthroplasty
+predict likelihood of revision surgery after shoulder arthroplasty using ML (cave: externally revised shoulders)
+
+
+luftqualität stadt zh? dataset täglich verfügbar -> scraping? was damit tun?
+
+dave/fabio fragen was er für ein ML modell hat für WS...
+
+moph/scma fragen was für ideen für ML? tägliche challenges etc.
+
+MDR: needs to be approved to be used as decision making support tool 

@@ -1,0 +1,5 @@
+zukunft:
+
+wenn daten nicht normalverteilt -> immer nonparametrische tests benutzen. leichter zu publizieren und auszuwerten.
+
+stacked barplot -> use percentages instead of absolute values.
